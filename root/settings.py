@@ -11,7 +11,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 # SECRET_KEY = "HELLOPERIzinwheere2340i3-45)(*)(*)(&()()dfjbgf4()&)()///"
 
 SECRET_KEY = env("SECRET_KEY")
-# CSRF_TRUSTED_ORIGINS = [""]
+CSRF_TRUSTED_ORIGINS = ["https://vercel-tes-pos-production.up.railway.app"]
 
 
 DEBUG = True

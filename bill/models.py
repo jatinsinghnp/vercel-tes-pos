@@ -230,7 +230,7 @@ def create_invoice_number(sender, instance, created, **kwargs):
             current_bill_number_pk = last_bill_number.invoice_number.split("-")[-1]
 
             if current_bill_number_pk:
-                bill_number = int(current_bill_number_pk) + 1
+                bill_number = int(current_bill_number_pk) 
             else:
                 bill_number = 1
             print(bill_number, "Incremented Bill Number")

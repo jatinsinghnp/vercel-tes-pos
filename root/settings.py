@@ -13,7 +13,7 @@ SECRET_KEY = "periwin-django-#6%f1s0d&xu%m7bmctv91m%ug(enva@#sc$^bkq7+hx0lxxw1="
 
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app",".now.sh"]
+ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [

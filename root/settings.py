@@ -9,7 +9,7 @@ env = environ.Env(DEBUG=(bool, False))
 environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
 
-SECRET_KEY = "periwin-django-#6%f1s0d&xu%m7bmctv91m%ug(enva@#sc$^bkq7+hx0lxxw1="
+SECRET_KEY = env("SECRET_KEY")
 
 DEBUG = True
 

@@ -8,12 +8,12 @@ from rest_framework import status
 
 class DiscountApiView(APIView):
     permission_classes = [IsAuthenticated]
-    queryset = DiscountTabe.objects.all()
+    
 
     def get(self, request):
-        discount = self.queryset
+        discount = DiscountTabe.objects.all()
         serilizer = DiscountSerilizer(discount, many=True)
 
-        return Response(serilizer.data, status=status.HTTP_200_OKs)
+        return Response(serilizer.data, status=status.HTTP_200_OK)
     
 DiscountApiView=DiscountApiView.as_view()

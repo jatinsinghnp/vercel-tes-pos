@@ -15,7 +15,7 @@ from rest_framework.viewsets import ModelViewSet
 
 class ProductList(ListAPIView):
     serializer_class = ProductSerializer
-    # pagination_class = None
+    pagination_class = None
 
     def get_queryset(self):
         return Product.objects.active()

@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import DiscountTabe
+from .models import DiscountTable
 # Register your models here.
-admin.site.register(DiscountTabe)
+admin.site.register(DiscountTable)

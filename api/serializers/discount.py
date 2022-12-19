@@ -1,8 +1,8 @@
-from discount.models import DiscountTabe
+from discount.models import DiscountTable
 from rest_framework.serializers import ModelSerializer
 
 
 class DiscountSerilizer(ModelSerializer):
     class Meta:
-        model = DiscountTabe
+        model = DiscountTable
         fields = "__all__"

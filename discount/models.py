@@ -7,7 +7,7 @@ class DiscountTable(models.Model):
         FLAT = "FLAT"
 
     discount_name = models.CharField(max_length=200)
-    dicount_type = models.CharField(
+    discount_type = models.CharField(
         max_length=200, choices=DiscountType.choices, default=DiscountType.PERCENTAGE
     )
     discount_amount = models.FloatField()

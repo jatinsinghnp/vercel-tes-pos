@@ -27,13 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
-CUSTOM_APPS = [
-    "bill",
-    "organization",
-    "user",
-    "product",
-    "api",
-]
+CUSTOM_APPS = ["bill", "organization", "user", "product", "api", "discount"]
 THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
